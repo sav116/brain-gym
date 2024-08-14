@@ -33,4 +33,5 @@ docker run -d \
     --log-opt max-file=3 \
     $IMAGE_NAME
 
-echo "Deployment completed successfully!"
+# Check status
+docker ps -f name=$IMAGE_NAME
