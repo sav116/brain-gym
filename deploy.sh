@@ -18,8 +18,7 @@ docker build -t $IMAGE_NAME .
 # Stop and remove the previous container if it exists
 if [ "$(docker ps -a -q -f name=$IMAGE_NAME)" ]; then
     echo "Stopping and removing the previous container: $IMAGE_NAME..."
-    docker stop $IMAGE_NAME
-    docker rm $IMAGE_NAME
+    docker rm -f $IMAGE_NAME
 fi
 
 # Run a new container
