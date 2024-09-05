@@ -2,8 +2,8 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import random
 
 def create_math_keyboard():
-    digits_a = random.randint(1, 4)
-    digits_b = random.randint(1, 4)
+    digits_a = random.randint(2, 4)
+    digits_b = random.randint(2, 4)
     
     a = random.randint(10**(digits_a - 1), 10**digits_a - 1)
     b = random.randint(10**(digits_b - 1), 10**digits_b - 1)
